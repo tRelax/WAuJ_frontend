@@ -9,8 +9,6 @@ import { HardwareDetailComponent } from './hardware-detail/hardware-detail.compo
 import { HardwarePriceComponent } from './hardware-price/hardware-price.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HardwareEditComponent } from './hardware-edit/hardware-edit.component';
-import { ReviewComponent } from './review-component/review.component';
-import { ReviewDetailComponent } from './review-detail/review-detail.component';
 
 @NgModule({
   declarations: [
@@ -18,9 +16,7 @@ import { ReviewDetailComponent } from './review-detail/review-detail.component';
     HardwareComponent,
     HardwareDetailComponent,
     HardwarePriceComponent,
-    HardwareEditComponent,
-    ReviewComponent,
-    ReviewDetailComponent
+    HardwareEditComponent
   ],
   imports: [
     BrowserModule,
