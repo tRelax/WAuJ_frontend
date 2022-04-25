@@ -1,0 +1,13 @@
+<h2 class="ms-2">List of reviews</h2>
+<ul class="list-group hardwares mb-5">
+    <div class="row col-md-4 ms-2">
+        <li class="list-group-item list-group-item-action liForComponent"
+            *ngFor="let review of reviews"
+            (click)="onSelect(review)"
+            [class.selected]="review === selectedReview"
+            [routerLink]="['/reviews/detail', review.naslov]">
+            <span class="ms-3 componentSpan">{{review.naslov}}</span>
+        </li>
+    </div>
+
+</ul>
